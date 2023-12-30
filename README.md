@@ -1,4 +1,4 @@
-QRCode
+QRCodeGenerator
 ======
 
 A simple library for generating [QR codes](https://en.wikipedia.org/wiki/QR_code) in C,
@@ -31,7 +31,7 @@ API
 QRCode qrcode;
 
 // Allocate a chunk of memory to store the QR code
-uint8_t qrcodeBytes[qrcode_getBufferSize()];
+uint8_t qrcodeBytes[qrcode_getBufferSize(3)];
 
 qrcode_initText(&qrcode, qrcodeBytes, 3, ECC_LOW, "HELLO WORLD");
 ```
